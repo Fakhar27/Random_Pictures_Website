@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Contact
+{% endblock title %}
+
+{% block body %}
+
+<!-- {% if messages %}
+{% for message in messages %}
+<div class="alert alert-{{ message.tags }} alert-dismissible fade show my-0" role="alert">
+    {{ message }}
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+{% endfor %}
+{% endif %} -->
+<div class="container-fluid px-0">
+    <img src="https://source.unsplash.com/1600x900/?contact" class="img-fluid" alt="...">
+</div>
+<div class="container mt-5">
+    <form method="post" action="/contact">
+        {% csrf_token %}
+        <div class="mb-3">
+            <label for="name" class="form-label text-light">Name</label>
+            <input type="name" class="form-control" id="name" name="name" placeholder="name">
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label text-light">Email</label>
+            <input type="email" id="email" class="form-control" name="email" placeholder="abc@123.com">
+        </div>
+        <div class="mb-3">
+            <label for="text" class="form-label text-light">Text</label>
+            <textarea class="form-control" id="text" rows="6" name="text"
+                placeholder="Enter your complaints over here"></textarea>
+        </div>
+        <div class="mb-3">
+            <button type="Submit" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+</div>
+{% endblock body %}

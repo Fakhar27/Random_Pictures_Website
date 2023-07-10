@@ -1,0 +1,192 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Home
+{% endblock title %}
+
+{% block body %}
+
+
+<div class="container-fluid px-0">
+    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img src="https://source.unsplash.com/1600x900/?snow" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="opacity-100 text-dark">Snow</h5>
+                    <!-- <p>Some representative placeholder content for the first slide.</p> -->
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="https://source.unsplash.com/1600x900/?space" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="opacity-100 text-light">Space</h5>
+                    <!-- <p>Some representative placeholder content for the second slide.</p> -->
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://source.unsplash.com/1600x900/?ocean" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="opacity-100 text-light">Ocean</h5>
+                    <!-- <p>Some representative placeholder content for the third slide.</p> -->
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+<p class="text-center my-4 text-light fw-bolder">OUR ALBUMS</p>
+
+<div class="text-center bg-dark row my-4 px-4 row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+    <div class="col">
+        <div class="card shadow-none border-0">
+            <img src="https://source.unsplash.com/900x900/?tree" class="d-block w-100" alt="...">
+            <p class="position-absolute top-25 text-light mx-3">Trees</p>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card shadow-none border-0">
+            <img src="https://source.unsplash.com/900x900/?anime" class="d-block w-100" alt="...">
+            <p class="position-absolute top-25 text-light mx-3">Anime</p>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card shadow-none border-0">
+            <img src="https://source.unsplash.com/900x900/?supercar" class="d-block w-100" alt="...">
+            <p class="position-absolute top-25 text-light mx-3">Cars</p>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card shadow-none border-0">
+            <img src="https://source.unsplash.com/900x900/?sky" class="d-block w-100" alt="...">
+            <p class="position-absolute top-25 text-dark mx-3">Sky</p>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card shadow-none border-0">
+            <img src="https://source.unsplash.com/900x900/?sun" class="d-block w-100" alt="...">
+            <p class="position-absolute top-25 text-dark mx-3">Sun</p>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card shadow-none border-0">
+            <img src="https://source.unsplash.com/900x900/?horse" class="d-block w-100" alt="...">
+            <p class="position-absolute top-25 text-dark-emphasis mx-3">Horse</p>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card shadow-none border-0">
+            <img src="https://source.unsplash.com/900x900/?lion" class="d-block w-100" alt="...">
+            <p class="position-absolute top-25 text-dark mx-3">Lion</p>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card shadow-none border-0">
+            <img src="https://source.unsplash.com/900x900/?city" class="d-block w-100" alt="...">
+            <p class="position-absolute top-25 text-light-emphasis mx-3">City</p>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card shadow-none border-0">
+            <img src="https://source.unsplash.com/900x900/?robot" class="d-block w-100" alt="...">
+            <p class="position-absolute top-25 text-light mx-3">Robot</p>
+        </div>
+    </div>
+    {% endblock body %}
+
+    <!doctype html>
+    <html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Website of Pictures</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    </head>
+
+    <body>
+
+        {% comment %} <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Pictures</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-light" aria-current="page" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="/about">About</a>
+                        </li>
+                        <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="/services" role="button" id="navbardropdown"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbardropdown">
+                            <li><a class="dropdown-item" href="/services">Flavours</a></li>
+                            <li><a class="dropdown-item" href="/services">Deals</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="/services">Make your own</a></li>
+                        </ul>
+                    </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="/services">Services</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav> {% endcomment %}
+
+
+
+
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+            crossorigin="anonymous"></script>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+            integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+            crossorigin="anonymous"></script>
+
+    </body>
+
+    </html>
